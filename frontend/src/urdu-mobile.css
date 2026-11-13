@@ -1,0 +1,410 @@
+@media (max-width: 640px) {
+  .is-urdu {
+    font-family: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif;
+  }
+
+  .is-urdu .site-header {
+    height: 76px;
+  }
+
+  .is-urdu .brand {
+    gap: 8px;
+  }
+
+  .is-urdu .brand-text b {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .is-urdu .brand-text small {
+    font-size: 9px;
+    line-height: 1.8;
+  }
+
+  .is-urdu .hero {
+    padding: 28px 0 24px;
+  }
+
+  .is-urdu .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    min-height: 0;
+  }
+
+  .is-urdu .hero-copy {
+    grid-row: 1;
+    width: 100%;
+    padding: 0;
+    text-align: right;
+  }
+
+  .is-urdu .hero-copy > .eyebrow {
+    justify-content: flex-start;
+    color: #e4c98f;
+    font-size: 11px;
+    letter-spacing: 0;
+    line-height: 1.8;
+  }
+
+  .is-urdu .hero-kicker {
+    display: none;
+  }
+
+  .is-urdu .hero h1 {
+    margin: 11px 0 10px;
+    font-size: clamp(33px, 9.2vw, 37px);
+    line-height: 1.95;
+    letter-spacing: 0;
+    text-align: right;
+  }
+
+  .is-urdu .hero-lead {
+    max-width: none;
+    margin-bottom: 16px;
+    color: #e6ede8;
+    font-size: 15px;
+    line-height: 2.12;
+    text-align: right;
+  }
+
+  .is-urdu .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .is-urdu .hero-actions .button {
+    min-height: 50px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.8;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, .12);
+  }
+
+  .is-urdu .hero-note {
+    justify-content: flex-start;
+    margin-top: 12px;
+    color: #d3e0d7;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .is-urdu .hero-visual {
+    grid-row: 2;
+    width: min(100%, 320px);
+    margin: 0 auto;
+    padding: 0 0 21px;
+  }
+
+  .is-urdu .hero-image-wrap {
+    aspect-ratio: 1.48 / 1;
+    border: 1px solid rgba(217, 182, 118, .65);
+    border-radius: 18px 68px 18px 18px;
+    box-shadow: 0 16px 34px rgba(4, 23, 17, .24);
+  }
+
+  .is-urdu .hero-photo-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9px;
+    line-height: 1.7;
+    letter-spacing: 0;
+  }
+
+  .is-urdu .hero-visual figcaption {
+    color: #d2dfd5;
+    font-size: 9px;
+    line-height: 1.8;
+  }
+
+  .is-urdu .hero-stamp {
+    left: 8px;
+    right: 8px;
+    padding: 8px 11px;
+    border: 1px solid rgba(217, 182, 118, .55);
+    border-radius: 12px;
+    box-shadow: 0 7px 18px rgba(5, 27, 19, .18);
+  }
+
+  .is-urdu .hero-stamp b {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+
+  .is-urdu .hero-stamp small {
+    font-size: 9px;
+    line-height: 1.7;
+  }
+
+  .is-urdu .hero-bottom {
+    font-size: 9px;
+    letter-spacing: 0;
+    line-height: 1.7;
+  }
+
+  .is-urdu .section-pad {
+    padding: 54px 0;
+  }
+
+  .is-urdu .subhero {
+    padding: 45px 0 38px;
+  }
+
+  .is-urdu .subhero .container {
+    text-align: right;
+  }
+
+  .is-urdu .subhero h1 {
+    margin: 13px 0 10px;
+    font-size: clamp(29px, 8vw, 34px);
+    line-height: 1.9;
+  }
+
+  .is-urdu .subhero p {
+    max-width: none;
+    font-size: 14px;
+    line-height: 2.1;
+  }
+
+  .is-urdu .intro-grid,
+  .is-urdu .values-grid,
+  .is-urdu .two-col,
+  .is-urdu .admission-grid,
+  .is-urdu .contact-grid,
+  .is-urdu .jamia-identity-grid,
+  .is-urdu .leader-grid,
+  .is-urdu .course-detail-hero-grid,
+  .is-urdu .course-detail-columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .is-urdu .intro-aside {
+    min-height: 0;
+    padding-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    text-align: right;
+  }
+
+  .is-urdu .vertical-word {
+    display: none;
+  }
+
+  .is-urdu .intro-main,
+  .is-urdu .values-copy,
+  .is-urdu .contact-copy,
+  .is-urdu .admission-grid > div,
+  .is-urdu .prose,
+  .is-urdu .leader-copy,
+  .is-urdu .course-detail-intro {
+    text-align: right;
+  }
+
+  .is-urdu .intro-main h2,
+  .is-urdu .section-heading h2,
+  .is-urdu .values-copy h2,
+  .is-urdu .two-col h2,
+  .is-urdu .admission-grid h2,
+  .is-urdu .contact-copy h2,
+  .is-urdu .cta-content h2,
+  .is-urdu .callout-strip h2,
+  .is-urdu .jamia-identity-copy h2,
+  .is-urdu .admissions-highlight-copy h2,
+  .is-urdu .course-detail-intro h1,
+  .is-urdu .course-detail-panel h2,
+  .is-urdu .course-detail-sidebar h2 {
+    margin: 12px 0 10px;
+    font-size: clamp(26px, 7.5vw, 31px);
+    line-height: 1.9;
+    letter-spacing: 0;
+  }
+
+  .is-urdu .intro-main > p,
+  .is-urdu .section-heading > p,
+  .is-urdu .values-copy > p,
+  .is-urdu .value-row p,
+  .is-urdu .two-col p,
+  .is-urdu .admission-grid > div > p,
+  .is-urdu .contact-copy > p,
+  .is-urdu .contact-item p,
+  .is-urdu .leader-copy > p:not(.leader-role),
+  .is-urdu .prose p,
+  .is-urdu .privacy-prose p,
+  .is-urdu .jamia-identity-copy > p,
+  .is-urdu .admissions-highlight-copy > p,
+  .is-urdu .course-detail-intro > p,
+  .is-urdu .course-detail-panel > p,
+  .is-urdu .course-detail-sidebar p {
+    font-size: 14px;
+    line-height: 2.1;
+  }
+
+  .is-urdu .privacy-prose {
+    text-align: right;
+  }
+
+  .is-urdu .section-head-row,
+  .is-urdu .cta-content,
+  .is-urdu .callout-strip {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    text-align: right;
+  }
+
+  .is-urdu .program-grid,
+  .is-urdu .program-grid-page,
+  .is-urdu .gallery-grid,
+  .is-urdu .principle-grid,
+  .is-urdu .steps,
+  .is-urdu .faq-grid,
+  .is-urdu .values-list,
+  .is-urdu .identity-facts,
+  .is-urdu .admission-pills,
+  .is-urdu .admissions-highlight-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  .is-urdu .program-card,
+  .is-urdu .notice-card,
+  .is-urdu .principle-grid > *,
+  .is-urdu .steps > *,
+  .is-urdu .faq-grid > *,
+  .is-urdu .course-detail-panel,
+  .is-urdu .course-detail-sidebar,
+  .is-urdu .admissions-highlight-copy {
+    padding: 16px;
+    text-align: right;
+  }
+
+  .is-urdu .program-image-wrap {
+    aspect-ratio: 1.75 / 1;
+  }
+
+  .is-urdu .program-card-body {
+    padding: 16px;
+    text-align: right;
+  }
+
+  .is-urdu .program-card h3,
+  .is-urdu .notice-content h3,
+  .is-urdu .principle-grid h3,
+  .is-urdu .steps h3,
+  .is-urdu .faq-grid h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    line-height: 1.9;
+  }
+
+  .is-urdu .program-card-body > p,
+  .is-urdu .notice-content p,
+  .is-urdu .principle-grid p,
+  .is-urdu .steps p,
+  .is-urdu .faq-grid p {
+    font-size: 14px;
+    line-height: 2;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
+
+  .is-urdu .program-card .text-link,
+  .is-urdu .program-card .program-learn-link,
+  .is-urdu .button {
+    min-height: 42px;
+    font-size: 12px;
+    line-height: 1.9;
+  }
+
+  .is-urdu .gallery-page-note {
+    padding: 16px;
+    text-align: right;
+  }
+
+  .is-urdu .gallery-page-note p,
+  .is-urdu .gallery-card figcaption span {
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .is-urdu .gallery-card figcaption {
+    padding: 14px;
+    text-align: right;
+  }
+
+  .is-urdu .gallery-card figcaption b {
+    font-size: 18px;
+    line-height: 1.9;
+  }
+
+  .is-urdu .contact-form {
+    padding: 18px;
+    text-align: right;
+  }
+
+  .is-urdu .contact-form label,
+  .is-urdu .contact-form input,
+  .is-urdu .contact-form textarea,
+  .is-urdu .contact-form select {
+    font-size: 13px;
+    line-height: 2;
+  }
+
+  .is-urdu .contact-form input,
+  .is-urdu .contact-form textarea,
+  .is-urdu .contact-form select {
+    min-height: 46px;
+  }
+
+  .is-urdu .contact-form input[type='email'],
+  .is-urdu .contact-form input[name='phone'] {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .is-urdu .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .is-urdu .footer-grid > div {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    text-align: right;
+  }
+
+  .is-urdu .footer-grid h4 {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .is-urdu .footer-copy,
+  .is-urdu .footer-grid p {
+    font-size: 13px;
+    line-height: 2.05;
+  }
+
+  .is-urdu .course-detail-hero {
+    padding: 30px 0 36px;
+  }
+
+  .is-urdu .course-detail-image {
+    height: 220px;
+  }
+
+  .is-urdu .course-focus-list li {
+    font-size: 13px;
+    line-height: 2;
+  }
+
+  .is-urdu .course-detail-actions .button {
+    min-height: 46px;
+    font-size: 12px;
+  }
+
+  .is-urdu .whatsapp-float {
+    left: 12px;
+    bottom: 12px;
+  }
+}

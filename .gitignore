@@ -1,0 +1,13 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+!frontend/.env.example
+!backend/.env.example
+*.log
+.DS_Store
+coverage
+
+# User-uploaded media is data, not source code. Back it up separately.
+backend/uploads/

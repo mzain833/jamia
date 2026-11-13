@@ -1,0 +1,29 @@
+JAMIA TUR RAZA GOUSIA MEHRIA — UPDATE NOTES
+
+Is ZIP mein tumhare existing project ko replace nahi kiya gaya; usi code par responsive aur security polish ki gayi hai.
+
+DESIGN
+- Mobile hero par text left aur existing Jamia event image right mein rahegi; image/text neeche alag-alag stack nahi honge.
+- Mobile course cards 2 columns mein compact hain; desktop par wider three-column layout aur tablet par two columns.
+- Cards ko refined borders, round corners, consistent image ratio, better spacing aur readable text diya gaya hai.
+- Principal section ab uploaded principal photo asset use karta hai jisme transparent background mask hai aur neutral premium backdrop CSS se milta hai.
+- Tumhara uploaded Jamia emblem full-logo asset mein use hua hai; checkerboard background ko transparent karne ki processing ki gayi hai. Navbar ke liye matching clean emblem mark rakha gaya hai.
+- Existing English/Urdu content, routes, media manager, program data aur original event images preserve ki gayi hain.
+
+SECURITY
+- Image uploads sirf JPEG/JPG, PNG aur WebP; maximum 5 MB; MIME signature verification aur random server-generated filenames retained hain.
+- Admin routes token + admin role ke peeche hain; media upload/replace endpoints par rate limiting add hui hai.
+- Production environment mein CLIENT_URL='*' ab CORS ko allow nahi karega; exact allowed origin configure karna zaroori hai.
+
+VALIDATION
+- Static project validator aur Node syntax checks run kiye gaye.
+- Vite production build, live MongoDB/API integration aur browser device QA is sandbox mein run nahi ho sakay, kyun ke npm packages install nahi the aur package registry network access available nahi tha. Is liye ZIP ko local install/build ke baad verify karna zaroori hai.
+
+WINDOWS PAR NEXT STEPS
+1. ZIP extract karo.
+2. Terminal mein project folder khol kar `npm install` frontend aur backend folders ke andar chalao.
+3. `.env.example` se `backend/.env` banao; apna MONGO_URI aur random JWT_SECRET set karo. Secret chat mein share mat karna.
+4. `backend` folder mein `npm run dev` chalao; doosre terminal mein `frontend` folder mein `npm run dev` chalao.
+5. Browser mein mobile preview check karo: 320px, 375px, 430px aur desktop. Agar cards/hero ka koi part cut ho, screenshot bhej dena aur usi actual rule ko fix karna.
+
+Important: “100k worth” is a visual target, not a guaranteed market valuation. Final production launch se pehle `npm audit`, a successful Vite build, real admin upload test, HTTPS/domain configuration, backups and live mobile QA complete karo.

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" role="img" aria-label="Decorative illustration for Islamic Studies">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#12352d"/><stop offset="1" stop-color="#35664d"/></linearGradient><pattern id="geo" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M18 2 34 18 18 34 2 18Z" fill="none" stroke="#f2dfb1" stroke-opacity=".1"/></pattern></defs>
+  <rect width="520" height="300" rx="18" fill="url(#bg)"/><rect width="520" height="300" rx="18" fill="url(#geo)"/>
+  <path d="M70 237V105c0-54 42-88 98-88s98 34 98 88v132" fill="none" stroke="#d9b676" stroke-width="3"/><path d="M95 237V109c0-40 30-66 73-66s73 26 73 66v128" fill="none" stroke="#f7e9c9" stroke-width="1.5" opacity=".55"/>
+  <g transform="translate(107 104)" fill="none" stroke="#d9b676" stroke-width="3" stroke-linejoin="round"><path d="M0 18c25-12 50-10 72 7v87c-22-17-47-19-72-7Z" fill="#f4e6c5"/><path d="M72 25c22-17 47-19 72-7v87c-25-12-50-10-72 7Z" fill="#f4e6c5"/><path d="M72 25v87"/><path d="M13 39c14-5 27-5 43 0M13 55c14-5 27-5 43 0M88 39c14-5 27-5 43 0M88 55c14-5 27-5 43 0" stroke="#9b804a" stroke-width="2"/></g>
+  <g transform="translate(352 89)" stroke="#d9b676" fill="none" stroke-width="2.5"><path d="M0 32 32 0l32 32-32 32Z"/><path d="M8 32 32 8l24 24-24 24Z"/><circle cx="32" cy="32" r="44" opacity=".35"/></g>
+  <text x="384" y="184" fill="#f7e9c9" font-family="Georgia,serif" font-size="18" text-anchor="middle">ISLAMIC</text><text x="384" y="209" fill="#d9b676" font-family="Georgia,serif" font-size="16" text-anchor="middle">STUDIES</text>
+</svg>

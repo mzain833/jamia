@@ -1,0 +1,60 @@
+JAMIA-TUR-RAZA GHOUSIA MEHRIA — START HERE
+===========================================
+
+RECOMMENDED ONE-ENV / ONE-SERVICE SETUP (Docker)
+------------------------------------------------
+1) Project root mein .env.example ko copy karke .env banao.
+2) .env mein MONGO_URI, JWT_SECRET, ADMIN_NAME, ADMIN_EMAIL, ADMIN_PASSWORD set karo. JWT_SECRET banane ke liye `node -e "console.log(require('crypto').randomBytes(48).toString('base64url'))"` chalao aur output .env mein paste karo. Saare example values replace karna zaroori hai; placeholders ke saath server start nahi hoga. Apne secrets kisi ko share na karo aur .env upload/commit na karo.
+3) Docker Desktop install/open hona chahiye.
+4) Project root terminal mein:
+   docker compose build
+   docker compose run --rm jamia-website npm run seed
+   docker compose run --rm jamia-website npm run create-admin
+   docker compose up -d
+5) Website: http://localhost:5000
+   API health: http://localhost:5000/api/health
+   Admin: http://localhost:5000/admin/login
+
+LOCAL DEVELOPMENT (Docker ke baghair)
+--------------------------------------
+Terminal 1:
+   cd backend
+   Copy-Item .env.example .env
+   npm install
+   npm run seed
+   npm run create-admin
+   npm run dev
+
+Terminal 2:
+   cd frontend
+   Copy-Item .env.example .env
+   npm install
+   npm run dev
+
+Browser: http://localhost:5173
+Backend: http://localhost:5000/api/health
+
+MEDIA LIBRARY (ADMIN PANEL)
+---------------------------
+- Admin login: http://localhost:5173/admin/login
+- Dashboard mein “Media library” tab khol kar JPG, PNG ya WEBP (max 5 MB) upload karo.
+- Har image ka title/alt text edit, image replace/delete, aur Gallery, Course, Event ya Homepage par publish kar sakte ho.
+- Uploaded files `backend/uploads/media` mein store hoti hain; unko include karne ke liye project ka backup lete waqt `backend/uploads` ka backup bhi lo.
+- Production mein deploy se pehle persistent disk ya object-storage plan confirm karo; optional `MEDIA_UPLOAD_DIR` se host-mounted disk ka absolute path set hota hai. Docker Compose local uploads ke liye named volume use karta hai.
+- `.env` secrets kisi ko send/share na karna. Admin password `.env` mein set karke `npm run create-admin` command `backend` folder se run karo.
+
+DEPLOY
+------
+Render + MongoDB Atlas ke liye `render.yaml`, `Dockerfile`, `README.md` aur `deployment/DEPLOYMENT-GUIDE.md` dekho. Render environment settings mein MONGO_URI, ADMIN_NAME, ADMIN_EMAIL, ADMIN_PASSWORD aur actual CLIENT_URL set karna hoga. JWT_SECRET private/strong rakho. `.env.example` se copy karte waqt example placeholders ko apni real configuration se replace karna zaroori hai.
+
+SOURCE CHECK
+------------
+Project root terminal mein `node scripts/validate-project.cjs` chala kar required files, environment templates aur local image references check kar sakte ho. Yeh Vite build ya real browser testing ka replacement nahi hai.
+
+IMPORTANT
+---------
+- Database URI aur JWT_SECRET ko sirf backend/root deployment environment mein rakho.
+- Default admin password nahi hai; apna unique password set karke create-admin command chalao.
+- Seed command ko kisi production database par chalane se pehle script review aur backup zaroor karo.
+- NPM install environment mein timeout hui thi; final deploy se pehle frontend production build, mobile browser QA, admin login, enquiry form aur MongoDB ko test karna zaroori hai.
+- Supplied event photos ko public karne se pehle owner permission, especially bachon ke photo consent, confirm karo.

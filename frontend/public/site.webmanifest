@@ -1,0 +1,25 @@
+{
+  "name": "Jamia-tur-Raza Ghousia Mehria",
+  "short_name": "Jamia-tur-Raza",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4eb",
+  "theme_color": "#103c31",
+  "description": "Jamia-tur-Raza Ghousia Mehria, established in 2025 in Jamilabad, Taxila, Pakistan. Explore Islamic learning programmes and year-round admissions information.",
+  "icons": [
+    {
+      "src": "/images/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.git
+.gitignore
+**/node_modules
+**/dist
+**/.env
+**/.env.*.local
+*.log
+review-assets
+jamia_assets_inspect
+.env
+backend/.env
+frontend/.env
+
+# Avoid baking user-uploaded files into image layers.
+**/uploads
